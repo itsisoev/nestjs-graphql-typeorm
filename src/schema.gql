@@ -2,13 +2,20 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type UserSetting {
+  userId: Int!
+  receiveNotification: Boolean!
+  receiveEmail: Boolean!
+}
+
 type User {
   id: Int!
   username: String!
   displayName: String
+  settings: UserSetting!
 }
 
 type Query {
-  getUser: User!
+  getUsers: [User!]!
   userByUUID(id: Int!): User
 }

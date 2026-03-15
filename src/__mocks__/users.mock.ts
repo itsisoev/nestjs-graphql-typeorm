@@ -7,6 +7,9 @@ export const mockUsers = [
     id: 2,
     username: 'Alex',
     displayName: 'Alex the Developer',
+    settings: {
+
+    },
   },
   {
     id: 3,
