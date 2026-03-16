@@ -19,3 +19,12 @@ type Query {
   getUsers: [User!]!
   userByUUID(id: Int!): User
 }
+
+type Mutation {
+  createUser(createUserData: CreateUserInput!): User!
+}
+
+input CreateUserInput {
+  username: String!
+  displayName: String
+}

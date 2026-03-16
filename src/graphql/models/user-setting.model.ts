@@ -11,3 +11,6 @@ export class UserSetting {
   @Field({ defaultValue: false })
   receiveEmail: boolean;
 }
+
+
+// TODO: uuid -> change userId from Int to userUUID
